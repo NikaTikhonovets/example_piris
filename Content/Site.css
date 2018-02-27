@@ -1,0 +1,83 @@
+﻿:root {
+	--columbia-blue: #B8D8D8;
+	--weldon-blue: #7A9E9F;
+	--stormcloud: #4F6367;
+	--bg-color: #D9DFC8;
+	--red: #E7574E;
+}
+/* Set padding to keep content from hitting the edges */
+.body-content {
+	background-color: var(--bg-color);
+	min-height: calc(100vh - 80px);
+	margin: 0;
+}
+.container {
+	max-width: inherit;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+/*input,
+select,
+textarea {
+    max-width: 280px;
+}*/
+
+.header_logo {
+	background-image: url(../images/big_logo.png);
+	background-size: contain, cover;
+	background-repeat: no-repeat;
+	width: 100px;
+	height: 48px;
+	float: left;
+	padding: 15px 15px;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.navbar-default {
+	background-color: var(--weldon-blue);
+	border-color: var(--weldon-blue);
+	border-radius: 0;
+	height: 50px;
+	margin-bottom: 0;
+	padding: 0 10%;
+}
+
+
+.footer {
+	height: 30px;
+	background-color: var(--stormcloud);
+	text-align: center;
+}
+
+.add-button {
+	display: block;
+	text-align: center;
+	position: fixed;
+	right: 20px;
+	bottom: 50px;
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	border: none;
+	color: var(--bg-color);
+	background: var(--stormcloud);
+	box-shadow: 0 5px 8px var(--columbia-blue);
+	font-size: 30px;
+	font-weight: inherit;
+}
+
+.add-button:hover {
+	text-decoration: none;
+	color: var(--bg-color);
+	background: var(--weldon-blue);
+}
+
+
